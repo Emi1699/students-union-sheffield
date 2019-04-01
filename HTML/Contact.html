@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <meta charset="utf-8">
+        
+		<link rel = "stylesheet" href = "../styles/normalize.css">
+		<link rel = "stylesheet" href = "../styles/style.css">
+     
+		<title>Contact | Student's Union Sheffield</title>
+	</head>
+	
+	<body>
+        <header id = "banner">
+            <p>STUDENT'S UNION, UNIVERSITY of SHEFFIELD</p>
+        </header>
+
+        <div id = "container">
+            <div class="Menu phoneMenu">
+                <input type="checkbox" id="showMenu">
+                <label for="showMenu" class="Title">Menu</label>
+
+                <nav id = "menuElements">
+                    <a href="../index.html">Home</a>
+                    <a href="Facilities.html">Facilities</a>
+                    <a href="Typical%20Week.html">Typical week</a>
+                    <a href="Food.html">Food choices</a>
+                    <a href="Contact.html">Contact</a>
+                    <a href="Accessibility.html">Accessibility</a>
+                </nav>
+            </div>
+            
+            <div class="Menu desktopMenu">
+                <a class="Title" id = "top">Menu</a>
+                <a href="../index.html">Home</a>
+                <a href="Facilities.html">Facilities</a>
+                <a href="Typical%20Week.html">Typical week</a>
+                <a href="Food.html">Food choices</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Accessibility.html" id = "bottom">Accessibility</a>
+            </div>
+            
+            <main>
+                <h1 id="contactTitle">Contact us</h1>
+                <p>Reach out to us if you have any questions, comments or complaints about our website.</p>            
+                <form action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl"method="GET">
+                    <input type="hidden" name="recipient"
+                           value="febuliga1@sheffield.ac.uk,ezaharia1@sheffield.ac.uk">
+
+                    <label for="getName">Your Name:</label>
+                        <input id="getName" placeholder="Type your name" type="text" name="realname" maxlength="40" size="20" required="required">
+                    <br>
+                    
+                    <label for="getEmail">Your Email:</label>
+                        <input id="getEmail" placeholder="Type your email" type="text" name="email" maxlength="40" size="20" required="required">
+                    <br>
+
+                    <label >Message:</label><br>
+                        <textarea name="Submitted text" id="textArea"  placeholder="Type your text here..."></textarea>
+                    <br>
+
+                    <input  id="submitButton" type="submit" value="Send">
+                </form>
+            </main>
+        </div>
+
+        <div id = social>
+            <div id = "socialMediaInvite">
+                <p>Find Sheffield's Student Union on social media!</p>
+            </div>
+
+            <a href = "https://www.facebook.com/sheffieldstudentsunion/" target="_blank"> <img src="../images/facebook_logo.jpg" class = social alt="Facebook logo"></a>
+
+            <a href = "https://www.youtube.com/user/sheffieldunion" target="_blank"> <img src="../images/youTube_logo.jpg" class = social alt="YouTube logo"></a>
+
+            <a href = "https://twitter.com/sheffieldsu" target="_blank"> <img src="../images/twitter_logo.jpg" class = social alt="Twitter logo"></a>
+
+            <a href = "https://www.instagram.com/sheffieldsu/" target="_blank"> <img src="../images/instagram_logo.jpg" class = social alt="Instagram logo"></a>
+            </div>
+
+        <footer >
+            <p id="copyright"> © 2018 Emanuel Buliga and Eduard Zaharia. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

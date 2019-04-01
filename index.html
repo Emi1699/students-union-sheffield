@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <meta charset="utf-8">
+        <meta name = "author" content="Fanel Emanuel Buliga and Eduard Zaharia">
+        
+		<link rel = "stylesheet" href = "styles/normalize.css">
+		<link rel = "stylesheet" href = "styles/style.css">
+		
+		<title>Homepage | Student's Union Sheffield</title>
+	</head>
+	
+	<body >
+        <header id = "banner">
+            <p>STUDENT'S UNION, UNIVERSITY of SHEFFIELD</p>
+        </header>
+
+        <div id = "container">
+            <div class="Menu phoneMenu">
+                <input type="checkbox" id="showMenu">
+                <label for="showMenu" class="Title" >Menu</label>
+
+                <nav id = "menuElements">
+                    <a href="index.html">Home</a>
+                    <a href="HTML/Facilities.html">Facilities</a>
+                    <a href="HTML/Typical%20Week.html">Typical week</a>
+                    <a href="HTML/Food.html">Food choices</a>
+                    <a href="HTML/Contact.html">Contact</a>
+                    <a href="HTML/Accessibility.html">Accessibility</a>
+                </nav>
+            </div>
+            
+            <!--this is the menu for the desktop version-->
+            <div class="Menu desktopMenu">
+                <a class="Title" id = "top">Menu</a>
+                <a href="index.html">Home</a>
+                <a href="HTML/Facilities.html">Facilities</a>
+                <a href="HTML/Typical%20Week.html">Typical week</a>
+                <a href="HTML/Food.html">Food choices</a>
+                <a href="HTML/Contact.html">Contact</a>
+                <a href="HTML/Accessibility.html" id = "bottom">Accessibility</a>
+            </div>
+            
+            <main>
+                <h1>Welcome,</h1>
+                <p>This website is made by students, for students. Our aim is to guide students new in Sheffield and shed some light on the extremely intricate Student's Union building, which sits opposite to the Molecular Biology Department and right next to the imposing Hick's Building. The reason why we made this website is that we know how baffling it was for us to navigate the building when we first arrived at the university. <br><br>On this website you will find information about places where you can eat, different student services and also we will try to present you how a typical week looks like for a Computer Science student.<br><br> We would also like to mention that this website is not the official SU website.</p>
+            </main>
+            
+            <div class = "imageSlider">
+                <img class = "showcase" src="images/firstImage.jpg" alt = "*party image*">
+                <img class = "showcase" src="images/secondImage.jpg" alt = "*SU building image*">
+                <img class = "showcase" src="images/thirdImage.jpg" alt = "*flag parade image*">
+            </div>  
+
+            <div class = "services">
+                <div class = "link" onclick="location.href = 'https://su.sheffield.ac.uk/groups'; " id = "societies">
+                    <p>Societies</p>
+                </div> 
+
+
+                <div class = "link" onclick="location.href = 'https://www.sheffield.ac.uk/ssid/index'; " id = "SSID">
+                    <p>SSID (Information Desk)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id = social>
+            <div id = "socialMediaInvite">
+                <p>Find Sheffield's Student Union on social media!</p>
+            </div>
+
+            <a href = "https://www.facebook.com/sheffieldstudentsunion/" target="_blank"> <img src="images/facebook_logo.jpg" class = social alt="Facebook logo"></a>
+
+            <a href = "https://www.youtube.com/user/sheffieldunion" target="_blank"> <img src="images/youTube_logo.jpg" class = social alt="YouTube logo"></a>
+
+            <a href = "https://twitter.com/sheffieldsu" target="_blank"> <img src="images/twitter_logo.jpg" class = social alt="Twitter logo"></a>
+
+            <a href = "https://www.instagram.com/sheffieldsu/" target="_blank"> <img src="images/instagram_logo.jpg" class = social alt="Instagram logo"></a>
+            </div>
+
+        <footer >
+            <p id="copyright"> © 2018 Emanuel Buliga and Eduard Zaharia. All rights reserved.</p>
+        </footer>
+	</body>
+</html>

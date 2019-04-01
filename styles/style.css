@@ -1,0 +1,756 @@
+body {
+    background: url("../images/background.jpg") fixed no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+        /* BANNER */
+
+#banner {
+    margin-bottom: 1%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    height: 60px;
+}
+
+#banner p {
+    font-family: "Bickham Script Pro", monospace, serif;
+    font-size: 20px;
+    font-style: oblique;
+    color: #813772;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white,  
+                  1px -1px 0 white,
+                 -1px  1px 0 white,
+                  2px  1px 0 white;
+}
+
+.Menu a:hover {
+    background-color: #ccc;
+    color: black;
+	}
+
+.Menu a {
+    background-color: rgba(184, 38, 1, 1);
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+	}
+
+	/* each image in the div */
+	 .social {
+			width: 10%;
+			border-radius: 25px;
+			margin-left: 12%;
+    }
+		/* div with social network images */
+    #social {           
+			width: 300px;
+			margin: 100px auto 20% auto;
+            position: center;
+    }
+
+#socialMediaInvite {
+    color: white;
+    text-shadow: -1px -1px 0 black,  
+                  1px -1px 0 black,
+                 -1px  1px 0 black,
+                  2px  1px 0 black;
+    text-align-last: center;
+}
+
+#last {
+    margin-bottom: 5%;
+}
+                /* ---------------------------------------*/
+
+        /* MAIN AREA OF THE PAGE */
+main {
+    width: 93%;
+    margin: 1% auto 3% 2.5%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    padding: 1%;
+    background-color: rgba(6, 47, 79, 0.9);
+    color: white;
+    float: left;
+}
+
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/
+
+            /* FACILITIES PAGE */    
+
+#facilities {
+    box-shadow:0px 0px 20px black;
+    border-radius: 20px;
+    margin: 20px auto 2% auto;
+    width: 93%;
+    background-color: rgba(129, 55, 114, 0.9);
+    color: white;
+    padding: 0 2% 0 2%;
+    overflow: hidden;
+    font-size: 20px;
+ }
+
+ #facilities img {
+    width: 250px;
+    border-radius: 10px;
+ }
+
+ .right {
+    float: right;
+    margin-left: 2%;
+ }
+
+ .left {
+    float: left;
+    margin-right: 2%;
+ }
+
+ h3 {
+    font-style: oblique;
+ }
+
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/
+
+            /* CONTACT PAGE */
+ #textArea {
+    border: 1px solid #999999;
+    width: 98.5%;
+    margin: 5px 0;
+    padding: 3px;
+    border-radius: 7px;
+    max-width: 98.5%;
+    resize: none;
+}
+
+#getName {
+    border-radius: 7px;
+}
+
+#getEmail {
+    border-radius: 7px;
+}
+
+#submitButton {
+    border-radius: 20px;
+    background-color: rgba(184,38,1, 0.9);
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 1%;
+}
+
+#contactTitle {
+    margin: 5px auto 25px auto;
+}
+
+#textArea {
+    height: 144px;
+}
+
+label {
+    font-size: 22px;
+}
+            /* FOOD PAGE */
+
+img {
+    border-radius: 10px;
+}
+
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/
+                    /* ---------------------------------------*/    
+
+            /* TYPICAL WEEK PAGE */
+#last img {
+    height: 150px;
+    width: auto;
+}
+article {
+    width: 90%;
+    margin: 0.5% auto 0.5% 3%;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px;
+    padding: 2%;
+    color: white;
+    float: left;
+}
+
+article {
+    background-color: rgba(129, 55, 114, 0.9);
+}
+
+article p {
+    font-size: 19px;
+}
+
+#first {
+    background-color: rgba(6, 47, 79, 0.9);
+}
+
+        /* FOOTER */
+footer {
+    color: white;
+    width: 97%;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 1px 1% 1px 2%;
+    margin: 0 auto 0 auto;
+    height: 150px;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    display: block;
+    background-color: black;
+    line-height: 10px;
+    height: 40px;
+} 
+
+footer p {
+    padding-bottom: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------END OF UNIVERSAL STYLES--------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 769px) {
+    .desktopMenu {
+        display: none;
+    }
+    .phoneMenu .Title {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+	}
+    
+    .phoneMenu {                                 
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 2%;
+    box-shadow: none;
+    }
+    
+    /* Hide checkbox */
+    .phoneMenu input[type = checkbox] {
+    display: none;    
+    }
+    
+    /* Show menu when invisible checkbox is checked */
+    .phoneMenu input[type = checkbox]:checked ~ nav {
+    display: block;
+    }
+    
+    .phoneMenu nav {
+    display: none;
+    }
+    
+    #socialMediaInvite {
+        text-align: center;
+    }
+    
+    			/* THE 3 IMAGES */
+			
+    	/* div with images */
+     .imageSlider {
+        width: 90%;
+        margin: 5% auto 60px auto;
+        text-align: center;
+        color: red;
+        display: block;
+    }
+    
+    	/* images in div */
+     .showcase {
+        width: 100%;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px;
+        margin-bottom: 2%;
+    }
+    
+        /*SERVICES*/
+    
+    .services {
+        width: 80%;
+        margin: 0 auto 10px 18.5%;
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+    }
+    
+     #societies {
+        width: 30%;
+        height: 10%;
+        margin: 5px 20px 5px 10%;
+        border-radius: 20px;
+        background-color: rgba(6, 47, 79, 0.8);
+        color: white;
+        font-size: 15px;
+    }
+    
+     #SSID {
+        width: 30%;
+        background-color: aqua;
+        border-radius: 20px;
+        margin: 5px 0 10% 5px;
+        background-color: rgba(6, 47, 79, 0.8);
+        color: white;
+        font-size: 15px;
+    }
+    
+    footer {
+    color: white;
+    width: 97%;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 1px 1% 1px 2%;
+    margin: 0 auto 0 auto;
+    height: 150px;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    display: block;
+} 
+
+    footer {
+        height: 40px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------END OF SMARTPHONE STYLES--------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* styles for tablets */
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+	
+				/* HOME PAGE */
+	
+			/* BANNER */
+    #banner {
+        height: 100px;
+        padding: 10px 10px 30px 10px;
+	}
+    
+    #banner p {
+        font-size: 40px;
+    }
+						/* ---------------------------------------*/
+	
+			/* MENU */
+    .phoneMenu {
+        display: none;
+    }
+		/* first tile of the menu */
+	 #top {
+		border-radius: 10px 10px 0px 0px;
+	}
+	
+		/* last tile of the menu */
+	 #bottom {
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	 .Menu {
+		width: 180px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 10px black;
+		margin: 1% 0 0 3%;
+        float: left;
+	}
+	 
+	 .Menu:hover {
+		background-color: rgba(184, 38, 1, 0.9);
+	}
+
+	 .Menu a.Title {
+		background-color: white;
+		color: black;
+	}
+						/* ---------------------------------------*/
+
+			/* MAIN AREA OF THE PAGE */
+
+	 #container {
+		width: 740px;
+		margin: 0 auto 0 auto;
+		box-shadow: 0px 0px 20px black;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	 main {
+		width: 400px;
+		margin: 1% auto 4% 35%;
+		box-shadow: 0px 0px 20px black;
+        float: none;
+         overflow: hidden;
+	}
+    
+     main p {
+        font-size: 19px;
+    }
+    
+		/* each image in the div */
+	 .social {
+			width: 35px;
+			border-radius: 25px;
+			margin-left: 15%;
+    }
+		/* div with social network images */
+    #social {           
+			width: 700px;
+			margin: 100px auto 4% auto;
+    }
+     
+    #socialMediaInvite p {
+        font-size: 25px;
+    }
+						/* ---------------------------------------*/
+	
+			/* THE 3 IMAGES */
+			
+    	/* div with images */
+     .imageSlider {
+        width: 740px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        color: red;
+    }
+    
+    	/* images in div */
+     .showcase {
+        width: 210px;
+        height: 170px;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px
+    }
+						/* ---------------------------------------*/
+	
+			/* THE 2 TILES (SERVICES AND SSID) */
+    
+     .services {
+        width: 80%;
+        margin: 0 auto 20px 18.5%;
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+    }
+    
+     #societies {
+        width: 30%;
+        height: 10%;
+        margin: 5px 20px 5px 10%;
+        border-radius: 20px;
+        background-color: rgba(6, 47, 79, 0.8);
+        color: white;
+        font-size: 15px;
+    }
+    
+     #SSID {
+        width: 30%;
+        background-color: aqua;
+        border-radius: 20px;
+        margin: 5px 0 10% 5px;
+        background-color: rgba(6, 47, 79, 0.8);
+        color: white;
+        font-size: 15px;
+    }
+    
+     #SSID:active {
+       background-color: rgba(184, 38, 1, 1);
+    }
+    
+     #societies:active {
+        background-color: rgba(184, 38, 1, 1);
+    }  
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+
+										/* FACILITIES PAGE */
+	 
+	 #facilities {
+		margin: 20px 5% 2% 5%;
+		width: 85.5%;
+	 }
+
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+	
+				/* CONTACT PAGE */
+	
+	#submitButton {
+		background-color: rgba(6, 47, 79, 0.6);
+		margin-left: 85%;
+	}
+	
+    #textArea {
+        height: 150px;
+	 }
+	
+    #submitButton:active {
+        background-color: rgba(184, 38, 1, 1);
+    }
+	
+    label {
+        font-size: 19px;
+    }
+					/* ---------------------------------------*/
+					/* ---------------------------------------*/
+					/* ---------------------------------------*/
+
+				/* TYPICAL WEEK PAGE */
+	article{
+        width: 400px;
+		margin: 1% auto 2% 35%;
+		box-shadow: 0px 0px 20px black;
+		padding: 1%;
+        float: none;
+    }
+    
+    body {
+        padding-bottom: 40px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------END OF TABLET STYLES------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* styles for desktops */
+@media screen and (min-width: 1025px) {
+	
+				/* HOME PAGE */
+    
+			/* BANNER */
+    #banner p {
+        font-size: 40px;
+    }
+						/* ---------------------------------------*/
+	
+			/* MENU */
+    .phoneMenu {
+        display: none;
+    }
+    	/* first tile of the menu */
+	 #top {
+		border-radius: 10px 10px 0px 0px;
+	}
+    
+		/* last tile of the menu */
+	 #bottom {
+		border-radius: 0px 0px 10px 10px;
+	}
+    
+	 .desktopMenu {
+		width: 200px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 10px black;
+		margin: 1% 0 0 5%;
+         float:left;
+	}
+
+	 .desktopMenu:hover {
+		background-color: rgba(184, 38, 1, 1);
+	}
+
+	 .desktopMenu .Title {
+		background-color: white;
+		color: black;
+	}
+						/* ---------------------------------------*/
+	
+			/* MAIN AREA OF THE PAGE */
+
+	 #container {
+		width: 1000px;
+		margin: 0 auto 1% auto;
+		box-shadow: 0px 0px 20px black;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	 main {
+		width: 625px;
+		margin: 1% 5% 3% 30%;
+		box-shadow: 0px 0px 20px black;
+        float: none;
+        overflow: hidden;
+	}
+    
+     main p {
+        font-size: 22px;
+    }
+
+	 main:hover {
+		background-color: rgba(6, 47, 79, 1);
+	}
+    
+    	/* each image in the div */
+     .social {
+			width: 50px;
+			border-radius: 25px;
+			margin-left: 15%;
+    }
+    
+    	/* div with social network images */
+     #social {           
+			width: 950px;
+			margin: 100px auto 4% auto;
+    }
+    
+    #socialMediaInvite p {
+        font-size: 30px;
+        color: white;
+    }
+    
+						/* ---------------------------------------*/
+	
+			/* THE 3 IMAGES */  
+    
+    	/* div with images */
+     .imageSlider {
+        width: 1000px;
+        margin: 0 auto 80px auto;
+        text-align: center;
+        color: red;
+    }
+    
+    	/* each image in the div */
+     .showcase {
+        width: 290px;
+        height: 200px;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px;
+    }
+						/* ---------------------------------------*/
+	
+			/* THE 2 TILES (SERVICES AND SSID) */
+    
+     .services {
+        width: 70%;
+		margin: 0 auto 20px 18.5%;
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+    }
+    
+     #societies {
+        width: 30%;
+        background-color: rgba(6, 47, 79, 0.9);
+        border-radius: 20px;
+		margin: 5px 0 10px 10%;
+        color: white;
+        font-size: 20px;
+    }
+    
+     #SSID {
+        width: 30%;
+        border-radius: 20px;
+        margin: 5px 0 10px 10%;
+        background-color: rgba(6, 47, 79, 0.9);
+        color: white;
+        font-size: 20px;
+    }
+    
+     #SSID:hover {
+       background-color: rgba(184,38,1, 1);
+       cursor: pointer;
+    }
+    
+     #societies:hover {
+        background-color: rgba(184, 38, 1, 1);
+        cursor: pointer; 
+    }
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+	
+				/* FACILITIES PAGE */
+	 
+	 #facilities {
+		margin: 20px 5% 2% 5%;
+		width: 85.5%;
+    }
+
+	 #facilities:hover {
+	 	background-color: rgba(129, 55, 114, 0.9);
+	 }
+
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+						/* ---------------------------------------*/
+	
+				/* CONTACT PAGE */
+	
+	#submitButton {
+		background-color: rgba(6,47,79, 0.6);
+		margin-left: 90%;
+        content: 'Send';
+	}
+	
+    #submitButton:hover {
+        background-color: rgba(184,38,1, 1);
+    }
+    
+
+					/* ---------------------------------------*/
+					/* ---------------------------------------*/
+					/* ---------------------------------------*/
+
+				/* TYPICAL WEEK PAGE */
+
+	article {
+        width: 600px;
+        margin: 1% auto 2% 30%;
+        box-shadow: 0px 0px 20px black;
+        padding: 1%;
+        background-color: rgba(129, 55, 114, 0.5);
+        float: none;
+    }
+
+	article:hover {
+	  	background-color: rgba(129, 55, 114, 0.9);
+	}
+
+	#first {
+	  	background-color: rgba(6, 47, 79, 0.5);
+	}
+
+	#first:hover{
+	  	background-color: rgba(6, 47, 79, 0.9);
+	}
+    
+    body {
+        padding-bottom: 40px;
+        bottom: 0;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------END OF DESKTOP STYLES------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
